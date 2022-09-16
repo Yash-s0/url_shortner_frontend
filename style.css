@@ -23,7 +23,6 @@ h1 {
 .register-form-block {
     border-radius: 20pt;
     margin: auto;
-    /* margin-top: 200px !important; */
     margin-top: 10%;
     border: 2px solid;
     border-color: black;
@@ -64,9 +63,7 @@ input {
     line-height: 25px;
     background-color: rgb(54, 123, 182);
     color: #f1f1f1;
-    /* font-family: 'Courier New', Courier, monospace; */
     font-size: 30px;
-    font-stretch: 200%;
 }
 
 p {

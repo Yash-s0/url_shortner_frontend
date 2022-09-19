@@ -1,7 +1,7 @@
 * {
     background-color: rgb(111, 185, 249);
     margin: auto;
-
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
 h1 {
@@ -29,20 +29,36 @@ h1 {
     background-color: rgb(126, 171, 223);
     height: 400px;
     width: 400px;
+    box-shadow: 20px 20px 30px rgb(54, 123, 182);
 
 }
 
-input {
+input,
+button {
     border: 2px solid;
     background-color: white;
     border-radius: 5pt;
     padding: 7px 15px;
+    font-size: 15px;
 }
 
 .label {
     background-color: rgb(126, 171, 223);
     font-size: 20px;
+    text-align: center;
+}
 
+.label-login {
+    background-color: rgb(126, 171, 223);
+    font-size: 20px;
+    text-align: center;
+}
+
+.registered-user,
+a {
+    background-color: rgb(126, 171, 223);
+    font-size: 20px;
+    text-align: center;
 }
 
 .button {
@@ -54,6 +70,14 @@ input {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(28, 117, 59);
+    padding: 17px 34px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transition: 0.2s all;
 }
 
 .header {
@@ -64,8 +88,7 @@ input {
     background-color: rgb(54, 123, 182);
     color: #f1f1f1;
     font-size: 30px;
-}
-
-p {
-    font-stretch: ultra-condensed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid black;
+    font-stretch: extra-condensed;
 }

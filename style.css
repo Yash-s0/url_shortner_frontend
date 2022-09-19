@@ -1,5 +1,5 @@
 * {
-    background-color: rgb(111, 185, 249);
+    background-color: #ADEFD1FF;
     margin: auto;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
@@ -8,7 +8,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: 10%;
-    background-color: rgb(126, 171, 223);
+    background-color: #2BAE66FF;
 }
 
 .register {
@@ -17,19 +17,20 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(126, 171, 223);
+    background-color: #2BAE66FF;
 }
 
 .register-form-block {
     border-radius: 20pt;
     margin: auto;
     margin-top: 10%;
-    border: 2px solid;
+    border: 3px solid;
     border-color: black;
-    background-color: rgb(126, 171, 223);
+    background-color: #2BAE66FF;
     height: 400px;
     width: 400px;
     box-shadow: 20px 20px 30px rgb(54, 123, 182);
+    text-align: center;
 
 }
 
@@ -42,27 +43,52 @@ button {
     font-size: 15px;
 }
 
+a {
+    color: rgb(35, 4, 41);
+}
+
 .label {
-    background-color: rgb(126, 171, 223);
+    background-color: #2BAE66FF;
     font-size: 20px;
     text-align: center;
 }
 
 .label-login {
-    background-color: rgb(126, 171, 223);
+    background-color: #2BAE66FF;
     font-size: 20px;
     text-align: center;
 }
 
 .registered-user,
 a {
-    background-color: rgb(126, 171, 223);
+    background-color: #2BAE66FF;
     font-size: 20px;
     text-align: center;
 }
 
 .button {
-    background-color: #4CAF50;
+    /* background-color: #39803b; */
+    background-color: #00203FFF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover,
+.switch-login-register:hover {
+    background-color: #00203FFF;
+    padding: 16px 33px;
+    box-shadow: 7px 6px 20px rgb(1, 13, 26);
+    transition: 0.2s all;
+}
+
+.switch-login-register {
+    background-color: #00203FFF;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -71,13 +97,7 @@ a {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-}
 
-.button:hover {
-    background-color: rgb(28, 117, 59);
-    padding: 17px 34px;
-    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
-    transition: 0.2s all;
 }
 
 .header {
@@ -85,10 +105,18 @@ a {
     padding: 12px;
     font-size: 18px;
     line-height: 25px;
-    background-color: rgb(54, 123, 182);
+    background-color: #00203FFF;
     color: #f1f1f1;
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: 1px solid black;
     font-stretch: extra-condensed;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    /* Red */
+    color: white;
+    margin-bottom: 15px;
 }

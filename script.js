@@ -13,10 +13,6 @@ const createUser = (user) => {
                 alert(error.response.data["message"]);
             }
         });
-
-    // .catch(error =>
-    //     alert("Error " + error.response.status + " User Already Exist.")
-    // );
 };
 
 // Taking arguments from user 

@@ -43,7 +43,7 @@ h1 {
     background-color: #2BAE66FF;
     height: 425px;
     width: 370px;
-    box-shadow: 20px 20px 30px rgb(54, 123, 182);
+    box-shadow: 20px 20px 30px #00203FFF;
     text-align: center;
 
 }
@@ -124,7 +124,13 @@ a {
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: 1px solid black;
-    font-stretch: extra-condensed;
+
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
 }
 
 .alert {

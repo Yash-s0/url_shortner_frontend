@@ -8,9 +8,15 @@ const createUser = (user) => {
             console.log(`POST: user is added`, addedUser);
             window.location.href = "./registration_confirmation.html"
         })
-        .catch(error =>
-            alert("Error " + error.response.status + " User Already Exist.")
-        );
+        .catch(function (error) {
+            if (error.response) {
+                alert(error.response.data["message"]);
+            }
+        });
+
+    // .catch(error =>
+    //     alert("Error " + error.response.status + " User Already Exist.")
+    // );
 };
 
 // Taking arguments from user 
@@ -29,6 +35,21 @@ function runform() {
     });
 }
 
+
+// Create a sticky header
+window.onscroll = function () { myFunction() };
+
+var header = document.getElementById("myHeader");
+
+var sticky = header.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+}
 
 
 

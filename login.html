@@ -3,6 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <p class="header" id="myHeader">My Web</p>
+    <div class="register-form-block">
+        <h1>Login</h1>
+        <form action="./registration_confirmation.html" class="register" id="login-form">
+            <br>
+            <p class="label">Username: <input type="text" id="username" placeholder="Username"
+                    id="username-field" /><br><br></p>
+            <p class="label">Password: <input type="password" id="password" placeholder="Password"
+                    id="password-field" /><br><br></p>
+            <button type="submit" value="submit" onclick='Loginform();' class="button"
+                id="login-form-submit">Login</button>
+        </form>
+        <form action="./index.html" class="register">
+            <button class="switch-login-register"> Register Here </button>
+        </form>
+    </div>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script defer src="./script.js"></script>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
     <title>Login</title>
 </head>
@@ -11,7 +43,7 @@
     <p class="header" id="myHeader">My Web</p>
     <div class="register-form-block" , id="createUser">
         <h1>Login</h1>
-        <form action="./registration_confirmation.html" class="register">
+        <form action="./login_confirmation.html" class="register">
             <br>
             <p class="label">Username: <input type="text" id="username" placeholder="Username" /><br><br></p>
             <p class="label">Password: <input type="password" id="password" placeholder="Password" /><br><br></p>
@@ -23,4 +55,4 @@
     </div>
 </body>
 
-</html>
+</html> -->

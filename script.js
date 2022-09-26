@@ -39,7 +39,6 @@ const UserInfo = () => {
             "Authorization": 'Bearer ' + getCookie("token")
         }
     }
-
     axios.post('http://127.0.0.1:5000/user-info', {}, config)
         .then(response => {
             logged_in = (response.data["username"])
@@ -132,8 +131,27 @@ function redirect_login() {
     window.location.href = "./login.html"
 }
 
+// See history of loggedIn user
+function seeHistory() {
+    alert("Showing History")
+    let config = {
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": 'Bearer ' + getCookie("token")
+        }
+    }
+    axios.post('http://127.0.0.1:5000/entries', {}, config)
+        .then(response => {
+            alert("History Avaliable.")
+            history_ = response.data
+            console.log(history_)
 
-
+        })
+        .catch(function (error) {
+            console.log(error);
+            alert("fail.")
+        });
+}
 
 
 

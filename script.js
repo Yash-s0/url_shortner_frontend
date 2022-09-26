@@ -45,7 +45,7 @@ const UserInfo = () => {
             logged_in = (response.data["username"])
             alert("Logged in as " + logged_in)
             console.log(response)
-            // document.getElementById("check").innerHTML += "<h1>" + logged_in + "</h1>";
+            window.location.href = "./home.html"
         })
         .catch(function (error) {
             console.log(error);

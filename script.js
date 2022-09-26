@@ -44,13 +44,14 @@ const UserInfo = () => {
         .then(response => {
             logged_in = (response.data["username"])
             alert("Logged in as " + logged_in)
-            // document.getElementById("show-user").innerHTML += "<h1> Welcome, " + logged_in + "</h1>";
             console.log(response)
+            // document.getElementById("check").innerHTML += "<h1>" + logged_in + "</h1>";
         })
         .catch(function (error) {
             console.log(error);
         });
 };
+
 
 // Login User
 const LoginUser = (user) => {

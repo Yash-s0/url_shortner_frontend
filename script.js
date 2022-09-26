@@ -44,7 +44,7 @@ const UserInfo = () => {
         .then(response => {
             logged_in = (response.data["username"])
             alert("Logged in as " + logged_in)
-            document.getElementById("show-user").innerHTML += "<h1> Welcome, " + logged_in + "</h1>";
+            // document.getElementById("show-user").innerHTML += "<h1> Welcome, " + logged_in + "</h1>";
             console.log(response)
         })
         .catch(function (error) {
@@ -60,15 +60,17 @@ const LoginUser = (user) => {
             console.log(loginuser_);
             if (loginuser_["success"] == true) {
                 setCookie("token", loginuser_["bearer_token"], 1)
-                window.location.href = "./home.html"
+                window.location.href = "./login_confirmation.html"
                 console.log(getCookie("token"))
             }
 
             else if (loginuser_["message"] == "User does not exist.") {
                 alert("User does not exist. Please Register")
+                window.location.href = "./login.html"
             }
             else {
                 alert("Incorrect password.")
+                window.location.href = "./login.html"
             }
 
         })
@@ -94,20 +96,6 @@ function Loginform() {
     });
 }
 
-// make the header sticky 
-// window.onscroll = function () { myFunction() };
-
-// var header = document.getElementById("myHeader");
-
-// var sticky = header.offsetTop;
-
-// function myFunction() {
-//     if (window.pageYOffset > sticky) {
-//         header.classList.add("sticky");
-//     } else {
-//         header.classList.remove("sticky");
-//     }
-// }
 
 // Set cookie
 function setCookie(name, value, days) {
@@ -137,10 +125,13 @@ function eraseCookie(name) {
     document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
 
+// Redirect to login page if user disagree to login
+function redirect_login() {
+    alert("Enter Details Again")
+    window.location.href = "./login.html"
+}
 
-// if cookie exists
-// getCookie("xyz") == None:
-//     redirect to login
+
 
 
 

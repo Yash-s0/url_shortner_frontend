@@ -35,13 +35,24 @@ h1 {
 
 }
 
-input,
+input {
+    border: 2px solid;
+    background-color: white;
+    border-radius: 5pt;
+    padding: 7px 15px;
+    font-size: 15px;
+}
+
 button {
     border: 2px solid;
     background-color: white;
     border-radius: 5pt;
     padding: 7px 15px;
     font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
 
 a {

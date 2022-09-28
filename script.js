@@ -1,3 +1,5 @@
+var myBooks
+
 //  Register a new user 
 //  Link to server
 const createUser = (user) => {
@@ -131,9 +133,9 @@ function redirect_login() {
     window.location.href = "./login.html"
 }
 
+
 // See history of loggedIn user
 function seeHistory() {
-    alert("Showing History")
     let config = {
         headers: {
             "Content-Type": "application/json",
@@ -142,16 +144,66 @@ function seeHistory() {
     }
     axios.post('http://127.0.0.1:5000/entries', {}, config)
         .then(response => {
-            alert("History Avaliable.")
-            history_ = response.data
-            console.log(history_)
-
+            globalThis.myBooks = response.data
+            if (myBooks["success"] == false) {
+                alert("Please login again.")
+            }
+            else {
+                console.log("Searching for previously searched urls in our database.")
+                window.location.href = "./see_history.html"
+                console.log(myBooks)
+            }
         })
         .catch(function (error) {
             console.log(error);
-            alert("fail.")
         });
 }
+
+
+// let tableFromJson = () => {
+//     const myBooks = [
+//         {
+//             'Book ID': '1', 'Book Name': 'Challenging Times',
+//             'Category': 'Business', 'Price': '125.60'
+//         },
+//         {
+//             'Book ID': '2', 'Book Name': 'Learn JavaScript',
+//             'Category': 'Programming', 'Price': '56.00'
+//         },
+//         {
+//             'Book ID': '3', 'Book Name': 'Popular Science',
+//             'Category': 'Science', 'Price': '210.40'
+//         },
+//     ]
+//     console.log(myBooks)
+//     let col = [];
+//     for (let i = 0; i < myBooks.length; i++) {
+//         for (let key in myBooks[i]) {
+//             if (col.indexOf(key) === -1) {
+//                 col.push(key);
+//             }
+//         }
+//     }
+//     const table = document.createElement("table");
+//     let tr = table.insertRow(-1);
+//     for (let i = 0; i < col.length; i++) {
+//         let th = document.createElement("th");
+//         th.innerHTML = col[i];
+//         tr.appendChild(th);
+//     }
+//     for (let i = 0; i < myBooks.length; i++) {
+//         tr = table.insertRow(-1);
+
+//         for (let j = 0; j < col.length; j++) {
+//             let tabCell = tr.insertCell(-1);
+//             tabCell.innerHTML = myBooks[i][col[j]];
+//         }
+//     }
+//     const divShowData = document.getElementById('showData');
+//     divShowData.innerHTML = "";
+//     divShowData.appendChild(table);
+// }
+
 
 
 

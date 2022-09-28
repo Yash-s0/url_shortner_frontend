@@ -139,21 +139,7 @@ a {
     margin-bottom: 15px;
 }
 
-.details-form-block {
-    border-radius: 20pt;
-    margin: auto;
-    margin-top: 10%;
-    border: 3px solid;
-    border-color: black;
-    background-color: #2BAE66FF;
-    height: auto;
-    width: auto;
-    margin-left: 300px;
-    margin-right: 300px;
-    box-shadow: 20px 20px 30px #00203FFF;
-    text-align: center;
-}
-
+.details-form-block,
 .details-form-block-auto {
     border-radius: 20pt;
     margin: auto;
@@ -171,6 +157,8 @@ a {
 
 
 table {
+    margin-top: 30px;
+    margin-bottom: 30px;
     border-collapse: collapse;
     border-spacing: 0;
 }

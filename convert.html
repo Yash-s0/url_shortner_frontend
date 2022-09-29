@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Convert</title>
+</head>
+
+<body>
+    <p class="header">My Web</p>
+    <div class="register-form-block">
+        <br>
+        <h2 id="changeh2">Enter URL here:</h2><br>
+        <form class="short-url" id="postdata">
+            <br>
+            <p class="label"><input type="url" id="url" placeholder="https://example.com" autocomplete="off"
+                    class="takeurl" size="90" /><br><br></p>
+            <button type="submit" value="submit" onclick='runurl();' class="button">Convert</button>
+        </form>
+        <br><br>
+    </div>
+
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
+<script src="./convert.js"></script>
+
+</html>

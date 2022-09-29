@@ -11,6 +11,18 @@ h1 {
     background-color: #2BAE66FF;
 }
 
+h2 {
+    background-color: #2BAE66FF;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    background-color: #2BAE66FF;
+    display: flex;
+    justify-content: center;
+}
+
 .register {
     margin-top: 10%;
     display: flex;
@@ -20,6 +32,9 @@ h1 {
     background-color: #2BAE66FF;
 }
 
+.short-url {
+    background-color: #2BAE66FF;
+}
 
 .register-form-block {
     border-radius: 20pt;
@@ -157,8 +172,11 @@ a {
 
 
 table {
+    align-self: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
     border-collapse: collapse;
     border-spacing: 0;
 }
@@ -166,5 +184,11 @@ table {
 th,
 td {
     padding: 10px 20px;
+    background-color: #b7f1bd;
     border: 1px solid #000;
+}
+
+.takeurl {
+    background-color: rgb(255, 255, 255);
+
 }

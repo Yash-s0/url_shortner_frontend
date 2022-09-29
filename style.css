@@ -243,7 +243,7 @@ div:hover .hide {
 }
 
 a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -293,7 +293,7 @@ input {
     background-color: rgb(21, 20, 20);
     margin-top: 20px;
     border: none;
-    color: white;
+    color: rgb(207, 202, 202);
     padding: 15px 30px;
     text-decoration: none;
     display: inline-block;
@@ -358,4 +358,15 @@ button:active {
 
 .login_alert {
     width: 500px;
+}
+
+.registration_alert {
+    width: 300px;
+}
+
+.registered-user {
+    width: 400px;
+    font-size: 30px;
+    color: rgb(207, 202, 202);
+    background-color: black;
 }

@@ -250,11 +250,9 @@ a {
 .register-form-block {
     border-radius: 40pt;
     margin-top: 9%;
-    /* background-color: rgb(52, 54, 56); */
     background-color: black;
     height: 470px;
     width: 370px;
-    box-shadow: 20px 20px 30px #00203FFF;
     box-shadow: #421D5D 2px 2px 30px;
     text-align: center;
 }
@@ -345,4 +343,19 @@ button:active {
 .switch-login-register {
     position: relative;
     position: fixed;
+}
+
+.details-form-block {
+    border-radius: 30pt;
+    margin-top: 10%;
+    margin-left: 300px;
+    margin-right: 300px;
+    border: none;
+    background-color: black;
+    box-shadow: #421D5D 2px 2px 30px;
+    text-align: center;
+}
+
+.login_alert {
+    width: 500px;
 }

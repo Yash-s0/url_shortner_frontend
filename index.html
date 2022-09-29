@@ -8,16 +8,20 @@
 </head>
 
 <body>
-    <p class="header">My Web</p>
+    <div class="header">
+        <p class="header-p" id="bottom">My Web</p><br><br>
+        <p class="hide"><a href="./login.html" class="header-p">Login</a></p>
+    </div>
+
     <div class="register-form-block" , id="createUser">
+        <br>
         <h1>Register</h1>
         <form action="./registration_confirmation.html" class="register">
             <br>
-            <p class="label">Username: <input type="text" id="username" placeholder="Username"
-                    autocomplete="off" /><br><br></p>
-            <p class="label">Password: <input type="password" id="password" placeholder="Password" /><br><br></p>
+            <input type="text" id="username" placeholder="Username" autocomplete="off" /><br><br>
+            <input type="password" id="password" placeholder="Password" /><br><br>
             <button type="submit" value="submit" onclick='runform();' class="button">Register</button>
-        </form>
+        </form><br><br>
         <form action="./login.html" class="register">
             <button class="switch-login-register"> Login Here </button>
         </form>

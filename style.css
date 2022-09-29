@@ -370,3 +370,18 @@ button:active {
     color: rgb(207, 202, 202);
     background-color: black;
 }
+
+.selection-form-block {
+    border-radius: 30pt;
+    margin-top: 10%;
+    margin-left: 300px;
+    margin-right: 300px;
+    border: none;
+    background-color: black;
+    box-shadow: #421D5D 2px 2px 30px;
+    text-align: center;
+}
+
+.selection {
+    width: 510px;
+}

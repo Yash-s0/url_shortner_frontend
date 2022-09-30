@@ -187,9 +187,7 @@ td {
     border: 1px solid #000;
 } */
 
-/* .takeurl {
-    background-color: rgb(255, 255, 255);
-} */
+
 
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
@@ -283,11 +281,20 @@ input {
     border-radius: 9pt;
     padding: 9px 15px;
     font-size: 15px;
-    border-width: 0 0 1px;
+    /* border-width: 0 0 0px; */
+    border: none;
 }
 
 *:focus {
     outline: none;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.takeurl:focus {
+    /* border: #7c4587; */
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
 }
 
 .button {
@@ -416,4 +423,39 @@ h2 {
 
 h3 {
     width: 400px;
+}
+
+
+.history-form-block {
+    border-radius: 30pt;
+    color: white;
+    margin-top: 5%;
+    border: none;
+    height: auto;
+    width: 600px;
+    box-shadow: #421D5D 2px 2px 30px;
+    text-align: center;
+    background-color: black;
+}
+
+table {
+    align-self: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #000;
+}
+
+th {
+    font-weight: 1600;
+    padding: 8px 30px;
+    color: bisque;
+    border: 1px solid #421D5D
+}
+
+td {
+    font-family: 100;
+    padding: 8px 30px;
+    /* margin: auto; */
+    background-color: #000000;
+    border: 1px solid #421D5D
 }

@@ -8,7 +8,6 @@ const createUser = (user) => {
             const addedUser = response.data;
             console.log(`POST: user is added`, addedUser);
             window.location.href = "./registration_confirmation.html"
-            alert(response.data["message"])
         })
         .catch(function (error) {
             if (error.response) {

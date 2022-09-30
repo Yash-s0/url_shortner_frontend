@@ -15,13 +15,18 @@ function converturl(url) {
             short_url = response
             console.log(short_url.data)
             if (short_url.data["message"] == "User already searched for this URL.") {
-                document.getElementById("postdata").innerHTML = "<h3>" + (short_url.data["message"]) + "</h3>"
+                document.getElementById("main-form").innerHTML = "<br><br><h3>" + (short_url.data["message"]) + "</h3>"
+                element = document.querySelector('h3');
+                element.style.color = 'orange';
             }
             else {
                 document.getElementById("changeh2").innerHTML = "<h3>" + (short_url.data["message"]) + "</h3>"
+                element = document.getElementById('changeh2');
+                element.style.color = 'orange';
                 document.getElementById("postdata").innerHTML = "<h3>" + (short_url.data["short_link"]) + "</h3>"
-                console.log(short_url.data["message"])
-                console.log(short_url.data["short_link"])
+                element = document.getElementById('postdata');
+                element.style.color = 'orange';
+
             }
         })
         .catch(function (error) {

@@ -195,7 +195,8 @@ td {
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
 * {
-    background-color: rgb(18, 17, 17);
+    /* background-color: rgb(18, 17, 17); */
+    background-color: black;
     margin: auto;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-family: 'Muli', sans-serif;
@@ -384,4 +385,35 @@ button:active {
 
 .selection {
     width: 510px;
+}
+
+.convert-form-block {
+    border-radius: 40pt;
+    margin-top: 9%;
+    background-color: black;
+    height: 300px;
+    width: 900px;
+    box-shadow: #421D5D 2px 2px 30px;
+    text-align: center;
+}
+
+h2 {
+    background-color: black;
+    color: rgb(222, 222, 222);
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.postdata {
+    width: 850px;
+}
+
+.label {
+    background-color: black;
+    color: rgb(222, 222, 222);
+}
+
+h3 {
+    width: 400px;
 }

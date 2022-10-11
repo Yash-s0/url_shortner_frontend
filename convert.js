@@ -2,6 +2,18 @@ function redirect_tourl_page() {
     window.location.href = "./convert.html"
 }
 
+// Get cookie
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+
 //convert any url
 function converturl(url) {
     let config = {
@@ -33,7 +45,6 @@ function converturl(url) {
             console.log(error);
         });
 }
-
 
 function runurl() {
     const form = document.querySelector('form');

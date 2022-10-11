@@ -16,14 +16,17 @@
             <br>
             <p class="label"><input type="url" id="url" placeholder="https://example.com" autocomplete="off"
                     class="takeurl" size="90" /><br><br></p>
-            <button type="submit" value="submit" onclick='runurl();' class="button">Convert</button>
+            <button type="submit" value="submit" onclick='runurl(); this.disabled = true;'
+                class="button">Convert</button>
         </form>
-        <br><br>
     </div>
+    <br><br>
+    <form action="/see_history.html" class="switchto-history">
+        <button class="switchto-history-btn">See history</button>
+    </form>
 
 </body>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="script.js"></script>
 <script src="./convert.js"></script>
 
 </html>

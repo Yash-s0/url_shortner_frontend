@@ -268,3 +268,13 @@ td {
     background-color: #000000;
     border: 1px solid #421D5D
 }
+
+.switchto-history {
+    display: flex;
+    justify-content: center;
+}
+
+.switchto-history-btn {
+    cursor: pointer;
+    padding: 16px 31px !important;
+}
